@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-project",
+  "version": "1.0.0",
+  "description": "This is a bootstrap project to demonstrate how to use npm and Gulp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emily Edgington",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
