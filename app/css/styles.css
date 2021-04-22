@@ -7189,13 +7189,14 @@ a.text-dark:hover, a.text-dark:focus {
 header {
   margin-bottom: 2em; }
 
-.highlights {
+.highlights, .nav-link, .navbar {
   padding: 3em;
   background-color: #982B1D;
   color: white; }
 
 body {
-  color: #735146; }
+  color: #735146;
+  font-family: AndaleMono, monospace; }
 
 section {
   margin-bottom: 4em; }
@@ -7216,8 +7217,15 @@ nav {
   padding-bottom: 2em; }
 
 footer {
-  background-color: #A6A6A6;
+  background-color: #982B1D;
   padding-top: 2em;
   color: black;
   padding-bottom: 4em;
-  text-align: center; }
+  text-align: center;
+  color: white; }
+
+.nav-link, .navbar {
+  padding: 1em; }
+
+.carousel-control-prev-icon {
+  height: 50%; }

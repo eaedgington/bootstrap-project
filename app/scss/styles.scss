@@ -5,6 +5,7 @@
 $ketchup-color: #982B1D;
 $mainfont-color: #735146;
 $grey-color: #A6A6A6;
+$first-fam: Andale Mono, monospace;
 
 
 header {
@@ -12,7 +13,7 @@ header {
 }
 
 
-// SCSS examples VARIABLES
+// SCSS examples: VARIABLES
 
 .highlights {
   padding: 3em;
@@ -21,9 +22,10 @@ header {
 }
 body {
   color: $mainfont-color;
+  font-family: $first-fam;
 }
 
-// SCSS examples NESTING
+// SCSS examples: NESTING
 section {
   h3 {
     text-align: center;
@@ -41,7 +43,7 @@ nav {
   }
 }
 
-// SCSS examples Mixins
+// SCSS examples: Mixins
 @mixin navFooter($color){
   background-color: $color;
   padding-top: 2em;
@@ -53,7 +55,32 @@ nav {
 
 }
 footer {
-  @include navFooter($grey-color);
+  @include navFooter($ketchup-color);
   padding-bottom: 4em;
   text-align: center;
+  color: white;
 }
+
+
+
+// SCSS examples: Extends/Inheritance
+
+.nav-link, .navbar{
+  @extend .highlights;
+  padding: 1em;
+}
+
+// SCSS examples: Operator
+
+$height: 100%;
+.carousel-control-prev-icon {
+  height: $height / 2;
+}
+
+// SCSS examples: Interpolation
+
+.navbar, footer {
+  @include Interpolation("image", url("media/burger.png"))
+}
+
+// Any Sass/SCSS technique of your choice, not already covered.
