@@ -79,8 +79,18 @@ $height: 100%;
 
 // SCSS examples: Interpolation
 
-.navbar, footer {
-  @include Interpolation("image", url("media/burger.png"))
+@mixin interpolation($fontcolor, $fontsize, $paddingtop, $paddingbottom)
+{
+    color: $fontcolor;
+    font-size: $fontsize;
+    #{$paddingtop}: 2px;
+    #{$paddingbottom}: 2px;
 }
+
+.nav-link{
+    @include interpolation(white, 20px, top, bottom);
+}
+
+
 
 // Any Sass/SCSS technique of your choice, not already covered.

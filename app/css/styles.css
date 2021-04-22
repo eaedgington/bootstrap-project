@@ -7196,7 +7196,7 @@ header {
 
 body {
   color: #735146;
-  font-family: AndaleMono, monospace; }
+  font-family: Andale Mono, monospace; }
 
 section {
   margin-bottom: 4em; }
@@ -7229,3 +7229,9 @@ footer {
 
 .carousel-control-prev-icon {
   height: 50%; }
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+  top: 2px;
+  bottom: 2px; }
